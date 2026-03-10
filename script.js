@@ -89,6 +89,9 @@ function renderTasks() {
   });
 }
 loadFromStorage();
+//  Принудительно ставим список "daily" при старте (чтобы не открывался архив)
+switchList('daily');
+
 addBtn.addEventListener('click', addTask);
 //Находим все кнопки д перекл списков
 
